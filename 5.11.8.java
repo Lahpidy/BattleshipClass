@@ -199,7 +199,7 @@ public class Battleship extends ConsoleProgram
 }
 _________________________________________________________________
 (PLAYER)
-   public class Player
+  public class Player
 {
     // Static constants for the Player class
     public static final int[] SHIP_LENGTHS = {2, 3, 3, 4, 5};
@@ -375,9 +375,9 @@ _________________________________________________________________
         numShips++;
     }
 }
+
 ______________________________________________________________________________________________
-(GRID)
-   public class Grid
+public class Grid
 {
      // Static constants for the grid class
     public static final int NUM_ROWS = 10;
@@ -607,10 +607,11 @@ ________________________________________________________________________________
         }
     }
 }
+
 _____________________________________________________________________________
 (SHIP)
     
-  public class Ship
+ public class Ship
 {
    // Direction constants
     private static final int UNSET = -1;
@@ -708,9 +709,10 @@ _____________________________________________________________________________
         return directionToString() + " ship of length " + length + " at " + locationToString();
     }
 }
+
 _______________________________________________________________________________________________________________
 (LOCATION)
-   public class Location
+ public class Location
 {
     // Static guess constants
     public static final int UNGUESSED = 0;
@@ -781,4 +783,3 @@ ________________________________________________________________________________
         return status;
     }
 }
-
