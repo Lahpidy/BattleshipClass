@@ -1,3 +1,20 @@
+public class GridTester extends ConsoleProgram
+{
+    public void run()
+    {
+        // Your test code here.
+        Grid grid = new Grid();
+        Ship s = new Ship(3);
+        
+        s.setLocation(3, 3);
+        s.setDirection(1);
+        
+        
+        grid.printShips();
+        
+    }
+}
+--------------------------------------------------------------------------------
 public class Grid
 {
     // Static constants for the grid class
