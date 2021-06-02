@@ -41,16 +41,15 @@ public class LocationTester extends ConsoleProgram
 ------------------------------------------------------------------------------------
 public class Location
 {
-    // Static guess constants
+    //Implement the Location class here
     public static final int UNGUESSED = 0;
     public static final int HIT = 1;
     public static final int MISSED = 2;
-
+    
     private int status;
     private boolean hasShip;
-    private Ship ship;
-
-    // Location constructor.
+     
+    // Location constructor. 
     public Location()
     {
         status = UNGUESSED;
@@ -79,7 +78,6 @@ public class Location
     public void markHit()
     {
         status = HIT;
-        ship.takeHit();
     }
 
     // Mark this location a miss.
@@ -95,11 +93,9 @@ public class Location
     }
 
     // Set the value of whether this location has a ship.
-    // Adds the ship located here to this Location
-    public void setShip(boolean val, Ship ship)
+    public void setShip(boolean val)
     {
         hasShip = val;
-        this.ship = ship;
     }
 
     // Set the status of this Location.
@@ -107,17 +103,10 @@ public class Location
     {
         this.status = status;
     }
-
+    
     // Get the status of this Location.
     public int getStatus()
     {
         return status;
-    }
-    
-    // Get the Ship at this Location.
-    // Null if there is no ship.
-    public Ship getShip()
-    {
-        return ship;
     }
 }
